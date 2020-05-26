@@ -88,6 +88,33 @@ var GT = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
         <h1>6x6 Binary Puzzle Game</h1>
         <h2>V7: Creation of a 2 dimensional array for easier row &amp; column reference.</h2>
         <p>Return to <a href="file:///C|/Users/abc/Downloads/32-6x6Bin-V07-MainAndVersionPages/32-BinaryPuzzle-6x6/index.html">home</a>:</p>
+		<p>
+		        <select id="cboPuzNo" onchange="LoadGrid(eval(value))">
+        <!--<select id="cboPuzNo">-->
+            <option value="GT">Test 1-36</option>
+            <option value="G01">Example in Q</option>
+            <option value="G02">Game 2</option>
+            <option value="G03">Game 3</option>
+            <option value="G04">Game 4</option>
+            <option value="G05">Game 5</option>
+            <option value="G06">Game 6</option>
+            <option value="G07">Game 7</option>
+            <option value="G08">Game 8</option>
+            <option value="G09">Game 9</option>
+            <option value="G10">Game 10</option>
+            <option value="G11">Game 11</option>
+            <option value="G12">Game 12</option>
+            <option value="G13">Game 13</option>
+        </select>
+		</p>
+		<br />
+		<input type="button" value="Solve repeat" onclick="BinaryPuzzleSolver()" />&nbsp;&nbsp;
+		<input type="button" value="Solve once" onclick="SolvePuzzle()" />&nbsp;&nbsp;<br />
+		<input type="button" value="Pairs" onclick="SolveNumberPairs()" />&nbsp;&nbsp;
+		<input type="button" value="RowPairs" onclick="SolveRowPairs()" />&nbsp;&nbsp;
+		<input type="button" value="ColPairs" onclick="SolveColPairs()" />&nbsp;&nbsp;
+		<input type="button" value="Trios" onclick="SolveNumberTrios()" />&nbsp;&nbsp;
+		<input type="button" value="Complete" onclick="CompleteRowCols()" />&nbsp;&nbsp;<br />
         <!--  3/8/19 Board cell labels have "B" for board, then column digit, then row digit"  -->
         <table class="gameboard">
             <tr>
